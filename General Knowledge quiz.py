@@ -69,6 +69,23 @@ else:
     print("Unlucky! You didnt score")
     time.sleep(1)
 
+print("Question6:\nWho created facebook? ")
+ 	time.sleep(1)
+ 	print("A: Mark Zuckerberg")
+ 	time.sleep(1)
+ 	print("B: Steve Jobs")
+ 	time.sleep(1)
+ 	print("C: Bill Gates")
+ 	time.sleep(1)
+ 	answerSix = input("Make your choice: ")
+ 	if answerSix == "A" or answerSix == "mark zuckerberg" :
+    print ("Well done! You scored a point! ")
+    time.sleep(1)
+    score = score + 1
+else:
+    print("Unlucky! You didnt score")
+    time.sleep(1) 
+
 print("Thats all the questions! your total score was...,")
 time.sleep(2)
 print(score,"!!!\nAMAZING!")
