@@ -12,9 +12,16 @@ name = input("What is your name?")
 print("Welcome to The Quiz, ",name,"\nWe'll be asking a series of general knowledge questions, \nplease answer all questions in lower case.")    #introduces the user to the quiz on two seperate lines
 time.sleep(1)    #stops the program for one second
 
-answerOne = input("Question 1:\nWhich country features a maple leaf on its flag? ")
+print("Question 1:\nWhich country features a maple leaf on its flag? ")
 time.sleep(1)
-if answerOne == "canada":
+print("A: Japan")
+time.sleep(1)
+print("B: Canada")
+time.sleep(1)
+print("C: France")
+time.sleep(1)
+answerOne = input("Make your choice: ")
+if answerOne == "canada" or answerOne == "b":
     print("Well done! You scored a point! ")
     time.sleep(1)
     score = score + 1
