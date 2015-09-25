@@ -47,3 +47,11 @@ for counter in range(0,10):
 print("That's it! the quiz is over. Your overall score was: ",score,"Well done!")
 #now you need to make it so that if they got less than 5, you tell them to improve,  less than 7 they could try harder and more they have done very well.
 #do this by replacing this comment with an if, elif and else 
+
+if score >= 7:
+    print("That's it! the quiz is over. Your overall score was: ",score,"Well done!")
+elif score <= 7:
+    print("That's it! the quiz is over. Your overall score was: ",score," Good try!")
+else:
+    print ("That's it! the quiz is over. Your overall score was: ",score," Better luck next time!")
+
