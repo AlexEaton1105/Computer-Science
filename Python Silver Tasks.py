@@ -11,6 +11,3 @@ print(qone+qtwo)
 
 qthree = input("What is your name? ")
 print("Welcome to python, " , qthree)
-
-
-

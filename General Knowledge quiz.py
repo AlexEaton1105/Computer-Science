@@ -84,14 +84,8 @@ print("Question6:\nWho created facebook? ")
     score = score + 1
 else:
     print("Unlucky! You didnt score")
-    time.sleep(1) 
+    time.sleep(1)
 
 print("Thats all the questions! your total score was...,")
 time.sleep(2)
 print(score,"!!!\nAMAZING!")
-
-
-
-                 
-
-
