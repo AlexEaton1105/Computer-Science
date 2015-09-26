@@ -9,10 +9,10 @@ operator = 0
 
 def add(x, y):
   return x + y;
-  
+
 def subtract (x, y):
   return x - y;
-  
+
 def multiply (x, y):
   return x * y;
 
@@ -26,8 +26,8 @@ for cunter in range(0,20):
         print("Question ",counter,"What is ",numberOne, "+", numberTwo,)
         ans = add(numberOne, numberTwo)
     elif operator == 2:
-              print("Question ",counter,"What is ",numberOne, "-",numberTwo,)                                          
+              print("Question ",counter,"What is ",numberOne, "-",numberTwo,)
               ans = subtract(numberOne, numberTwo)
 
-              
+
 #shows all questions and doesnt let you answer them
