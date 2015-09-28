@@ -21,5 +21,11 @@ ELSE:
   OUTPUT unlucky message
 
 REAPEAT until 10 questions asked;
-  OUTPUT final total score message;
+  OUTPUT final score and well done message;
+  IF score < 4:
+  OUTPUT better luck next time;
+  ELIF score < 7:
+  OUTPUT good try;
+  ELSE:
+  OUTPUT amazing;
 END.
