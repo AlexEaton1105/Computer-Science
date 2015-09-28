@@ -8,7 +8,7 @@ numberTwo = 0
 operator = 0
 
 def add(x, y):
-  return x + y;
+  return x + y; # 
 
 def subtract (x, y):
   return x - y;
@@ -17,7 +17,7 @@ def multiply (x, y):
   return x * y;
 
 name = input("What is your name?  ")
-print("Welcome to the quiz, ",name,)
+print("Welcome to the quiz, ",name,) #this makes the experience more personal for the user.
 
 for counter in range(0,10):
     counter = counter + 1
