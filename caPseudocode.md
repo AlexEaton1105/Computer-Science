@@ -1,3 +1,4 @@
+```
 Start
 INPUT name;
   WHILE name is empty;
@@ -29,3 +30,4 @@ REAPEAT until 10 questions asked;
   ELSE:
   OUTPUT amazing;
 END.
+```
