@@ -7,9 +7,9 @@ Put the tea bag in the cup
 Pour boiled water into cup
 Stir the tea bag in water
 Remove tea bag
-Add milk 
+Add milk
 If (sugar is required)
 Then add sugar
 Else do nothing
-serve 
+serve
 end.
