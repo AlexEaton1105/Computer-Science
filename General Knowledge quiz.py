@@ -1,13 +1,13 @@
 # date: 16/09/15
 # username: Alex
 # name: Alex Eaton
-# description: Python gneral knowledge quiz
+# description: Python general knowledge quiz
 
 import time    #imports the time module which allows for a pause inbetween printing
 
 score = 0    #defines the user's score before starting
 
-name = input("What is your name?")
+name = input("What is your name?    ")    #takes the user's name so it can be used elsewhere
 
 print("Welcome to The Quiz, ",name,"\nWe'll be asking a series of general knowledge questions, \nplease answer all questions in lower case.")    #introduces the user to the quiz on two seperate lines
 time.sleep(1)    #stops the program for one second
