@@ -6,6 +6,9 @@ score = 0 #this defines the score and tells them how many questions they've got 
 numberOne = 0 #this is the variable for the first number in each question.
 numberTwo = 0 #this is the variable for the first second in each question.
 operator = 0 #this is the variable thst stores the number to be assigned to the operator in each question.
+classOne = open("classOne.txt","a")
+classTwo = open("classTwo.txt","a")
+classThree = open("classThree.txt","a")
 
 def add(x, y): #this defines the add variable.
   return x + y; #tells the computer what to do when the subtract variable is called
@@ -17,6 +20,14 @@ def multiply (x, y): #this defines the multiply variable.
   return x * y; #tells the computer what to do when the subtract variable is called
 
 name = input("PLese tell me your name ") #asks for users name so it can be used elsewhere in the code.
+whichClass = input("and also are you in class one, class two or class three?)
+if whichClass = "class one" == "1":
+  classOne = open("classOne.txt","a")
+elif whichClass = "class two" == "2":
+  classTwo = open("classTwo.txt","a")
+else:
+  classThree = open("classThree.txt","a")   
+
 print("Welcome to the quiz, ",name,) #welcomes the user to the quiz, this makes the experience more personal for the user.
 
 for counter in range(0,10): #when the variable is in range of 1 to 10 it runs all the indented code.
