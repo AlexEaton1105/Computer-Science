@@ -18,9 +18,9 @@ def multiply (x, y): #this defines the multiply variable.
 
 name = input("PLese tell me your name ") #asks for users name so it can be used elsewhere in the code.
 whichClass = input("and also are you in class one, class two or class three?)
-if whichClass = "class one" == "1":
+if whichClass == "class one" or whichClass == "1" or whichClass =="Class One":
   classOne = open("classOne.txt","a")
-elif whichClass = "class two" == "2":
+elif whichClass == "class two" or whichClass == "2" or whichClass == "Class Two":
   classTwo = open("classTwo.txt","a")
 else:
   classThree = open("classThree.txt","a")   
