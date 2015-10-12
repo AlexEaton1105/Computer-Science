@@ -1,3 +1,5 @@
+
+```
 Fill kettle with water
 Turn kettle on
 Boil the water
@@ -13,3 +15,4 @@ Then add sugar
 Else do nothing
 serve
 end.
+```
