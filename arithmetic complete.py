@@ -6,9 +6,6 @@ score = 0 #this defines the score and tells them how many questions they've got 
 numberOne = 0 #this is the variable for the first number in each question.
 numberTwo = 0 #this is the variable for the first second in each question.
 operator = 0 #this is the variable thst stores the number to be assigned to the operator in each question.
-classOne = open("classOne.txt","a")
-classTwo = open("classTwo.txt","a")
-classThree = open("classThree.txt","a")
 
 def add(x, y): #this defines the add variable.
   return x + y; #tells the computer what to do when the subtract variable is called
