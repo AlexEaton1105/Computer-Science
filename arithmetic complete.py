@@ -18,12 +18,7 @@ def multiply (x, y): #this defines the multiply variable.
 
 name = input("PLese tell me your name ") #asks for users name so it can be used elsewhere in the code.
 whichClass = input("and also are you in class one, class two or class three?) #asks the user for their class number.
-if whichClass == "class one" or whichClass == "1" or whichClass =="Class One":
-  classOne = open("classOne.txt","a")
-elif whichClass == "class two" or whichClass == "2" or whichClass == "Class Two":
-  classTwo = open("classTwo.txt","a")
-else:
-  classThree = open("classThree.txt","a")   
+
 
 print("Welcome to the quiz, ",name,) #welcomes the user to the quiz, this makes the experience more personal for the user.
 
@@ -32,7 +27,7 @@ for counter in range(0,10): #when the variable is in range of 1 to 10 it runs al
     numberOne = random.randint(1,10) #randomly generates a number to be used in the question.
     numberTwo = random.randint(1,10) #randomly generates a number to be used in the question.
     operator = random.randint(1,3)   #randomly generates a number to be used in the question.
-
+ 
   if operator == 1: #when the random operator is 1 it runs the indented code.
     print("Question ",counter,"What is ",numberOne, "+", numberTwo) #prints the question using the add variable.
     ans = add(numberOne, numberTwo) #defines the question to be compared to the users input.
@@ -54,13 +49,25 @@ for counter in range(0,10): #when the variable is in range of 1 to 10 it runs al
 #make it so that if they got less than 4, you tell them to improve,  less than 7 they could try harder and more they have done very well.
 #do this by replacing this comment with an if, elif and else
 
-if score <= 4: #if the score is less than 4 the indented code runs.
+ if whichClass == "class one" or whichClass == "1" or whichClass =="Class One":
+    classOne = open("classOne.txt","a")
+    classOne.write("\n"name,":",score)
+    classOne.close()
+  elif whichClass == "class two" or whichClass == "2" or whichClass == "Class Two":
+    classTwo = open("classTwo.txt","a")
+    classTwo.write("\n"name,":",score)
+    classTwo.close()
+  else:
+    classThree = open("classThree.txt","a")
+    classThree.write("\n"name,":",score)
+    classThree.close()
+
+ if score <= 4: #if the score is less than 4 the indented code runs.
     print("That's it! the quiz is over. Your overall score was: ",score,"Better luck next time!!") #ends the program telling the user's final score.
-elif score <= 7: #if the score is less than 7 the indented code runs.
+ elif score <= 7: #if the score is less than 7 the indented code runs.
     print("That's it! the quiz is over. Your overall score was: ",score," Good try!") #ends the program telling the user's final score.
-else: #if the score is different to the other variables the indented code runs.
+ else: #if the score is different to the other variables the indented code runs.
     print ("That's it! the quiz is over. Your overall score was: ",score," Well done!") #ends the program telling the user's final score.
 time.sleep(1)
-file.write("\n"name,":",score)
 print("Your score has been saved to your class' file.")
 time.sleep(1)
