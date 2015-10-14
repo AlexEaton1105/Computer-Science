@@ -60,3 +60,7 @@ elif score <= 7: #if the score is less than 7 the indented code runs.
     print("That's it! the quiz is over. Your overall score was: ",score," Good try!") #ends the program telling the user's final score.
 else: #if the score is different to the other variables the indented code runs.
     print ("That's it! the quiz is over. Your overall score was: ",score," Well done!") #ends the program telling the user's final score.
+time.sleep(1)
+file.write("\n"name,":",score)
+print("Your score has been saved to your class' file.")
+time.sleep(1)
