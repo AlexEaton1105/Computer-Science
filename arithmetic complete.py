@@ -17,7 +17,7 @@ def multiply (x, y): #this defines the multiply variable.
   return x * y; #tells the computer what to do when the subtract variable is called
 
 name = input("PLese tell me your name ") #asks for users name so it can be used elsewhere in the code.
-whichClass = input("and also are you in class one, class two or class three?) #asks the user for their class number.
+whichClass = input("and also are you in class one, class two or class three?)
 if whichClass == "class one" or whichClass == "1" or whichClass =="Class One":
   classOne = open("classOne.txt","a")
 elif whichClass == "class two" or whichClass == "2" or whichClass == "Class Two":
@@ -60,7 +60,3 @@ elif score <= 7: #if the score is less than 7 the indented code runs.
     print("That's it! the quiz is over. Your overall score was: ",score," Good try!") #ends the program telling the user's final score.
 else: #if the score is different to the other variables the indented code runs.
     print ("That's it! the quiz is over. Your overall score was: ",score," Well done!") #ends the program telling the user's final score.
-time.sleep(1)
-file.write("\n"name,":",score)
-print("Your score has been saved to your class' file.")
-time.sleep(1)
