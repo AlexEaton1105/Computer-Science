@@ -54,21 +54,21 @@ for counter in range(0,10): #when the variable is in range of 1 to 10 it runs al
     classOne.write("\n")
     classOne.write(name)
     classOne.write(":")
-    classOne.write(score)
+    classOne.write(str(score)
     classOne.close()
   elif whichClass == "class two" or whichClass == "2" or whichClass == "Class Two":
     classTwo = open("classTwo.txt","a")
     classTwo.write("\n")
     classTwo.write(name)
     classTwo.write(":")
-    classTwo.write(score)
+    classTwo.write(str(score)
     classTwo.close()
   else:
     classThree = open("classThree.txt","a")
     classThree.write("\n")
     classThree.write(name)
     classThree.write(":")
-    classThree.write(score)
+    classThree.write(str(score)
     classThree.close()
 
  if score <= 4: #if the score is less than 4 the indented code runs.
