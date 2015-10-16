@@ -23,7 +23,7 @@ if whichClass == "class one" or whichClass == "1" or whichClass =="Class One":
 elif whichClass == "class two" or whichClass == "2" or whichClass == "Class Two":
   classTwo = open("classTwo.txt","a")
 else:
-  classThree = open("classThree.txt","a")   
+  classThree = open("classThree.txt","a")
 
 print("Welcome to the quiz, ",name,) #welcomes the user to the quiz, this makes the experience more personal for the user.
 
