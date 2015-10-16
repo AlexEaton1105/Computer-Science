@@ -49,27 +49,27 @@ for counter in range(0,10): #when the variable is in range of 1 to 10 it runs al
 #make it so that if they got less than 4, you tell them to improve,  less than 7 they could try harder and more they have done very well.
 #do this by replacing this comment with an if, elif and else
 
- if whichClass == "class one" or whichClass == "1" or whichClass =="Class One":
-    classOne = open("classOne.txt","a")
-    classOne.write("\n")
-    classOne.write(name)
-    classOne.write(":")
-    classOne.write(str(score)
-    classOne.close()
-  elif whichClass == "class two" or whichClass == "2" or whichClass == "Class Two":
-    classTwo = open("classTwo.txt","a")
-    classTwo.write("\n")
-    classTwo.write(name)
-    classTwo.write(":")
-    classTwo.write(str(score)
-    classTwo.close()
-  else:
-    classThree = open("classThree.txt","a")
-    classThree.write("\n")
-    classThree.write(name)
-    classThree.write(":")
-    classThree.write(str(score)
-    classThree.close()
+ if whichClass == "class one" or whichClass == "1" or whichClass =="Class One": #when classOne is chosen it runs the indented code.
+    classOne = open("classOne.txt","a")         #opens the classOne file.
+    classOne.write("\n")                        #writes a blank line into the class file.
+    classOne.write(name)                        #enters the name into the class file.
+    classOne.write(":")                         #writes a colon into the class file.
+    classOne.write(str(score)                   #enters the user's score into the class file.
+    classOne.close()                            #closes the classOne file.
+  elif whichClass == "class two" or whichClass == "2" or whichClass == "Class Two": #when classTwo is chosen it runs the indented code.
+    classTwo = open("classTwo.txt","a")         #opens the classTwo file.
+    classTwo.write("\n")                        #writes a blank line into the class file.
+    classTwo.write(name)                        #enters the name into the class file.
+    classTwo.write(":")                         #writes a colon into the class file.
+    classTwo.write(str(score)                   #enters the user's score into the class file. 
+    classTwo.close()                            #closes the classTwo file.
+  else: #when classThree is chosen it runs the indented code.
+    classThree = open("classThree.txt","a")     #opens the classThree file. 
+    classThree.write("\n")                      #writes a blank line into the class file.
+    classThree.write(name)                      #enters the name into the class file.
+    classThree.write(":")                       #writes a colon into the class file.
+    classThree.write(str(score)                 #enters the user's score into the class file.
+    classThree.close()                          #closes the classThree file.
 
  if score <= 4: #if the score is less than 4 the indented code runs.
     print("That's it! the quiz is over. Your overall score was: ",score,"Better luck next time!!") #ends the program telling the user's final score.
