@@ -1,3 +1,4 @@
+```
 Start
 INPUT name;
 INPUT user's Class;
@@ -15,3 +16,4 @@ Write name AND score into chosen class file;
 Close class file;
 
 END.
+```
