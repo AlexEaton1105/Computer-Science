@@ -19,13 +19,9 @@ def multiply (x, y): #this defines the multiply variable.
   return x * y; #tells the computer what to do when the subtract variable is called
 
 while name == "":
-  name = input("PLese tell me your name ") #asks for users name so it can be used elsewhere in the code.
+  name = input("Please tell me your name ") #asks for users name so it can be used elsewhere in the code.
 while whichClass == "":
   whichClass = input("and also are you in class one, class two or class three?") #asks the user for their class number.
-if whichClass == "4" or whichClass == "5" or whichClass == "6" or whichClass == "7" or whichClass == "8" or whichClass == "9" or whichClass == "10":
-  print ("This class doesn't exist. Please choose another class.")
-  WhichClass = ""
-
 
 print("Welcome to the quiz, ",name,) #welcomes the user to the quiz, this makes the experience more personal for the user.
 
