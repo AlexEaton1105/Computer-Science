@@ -21,7 +21,7 @@ def multiply (x, y): #this defines the multiply variable.
 while name == "":
   name = input("Please tell me your name ") #asks for users name so it can be used elsewhere in the code.
 while whichClass == "":
-  whichClass = input("and also are you in class one, class two or class three?") #asks the user for their class number.
+  whichClass = input("are you in class one, class two or class three?") #asks the user for their class number.
 
 print("Welcome to the quiz, ",name,) #welcomes the user to the quiz, this makes the experience more personal for the user.
 
