@@ -22,6 +22,7 @@ while name == "":
   name = input("Please tell me your name ") #asks for users name so it can be used elsewhere in the code.
 while whichClass == "":
   whichClass = input("are you in class one, class two or class three?") #asks the user for their class number.
+  sort=(input("Do you want it sorted by Alphabetical or by Score Y or N"))
 
 print("Welcome to the quiz, ",name,) #welcomes the user to the quiz, this makes the experience more personal for the user.
 
@@ -53,7 +54,7 @@ for counter in range(0,10): #when the variable is in range of 1 to 10 it runs al
 #do this by replacing this comment with an if, elif and else
 
 if whichClass == "class one" or whichClass == "1" or whichClass =="Class One":
-    classOne = open("classOnetxt","a")
+    classOne = open("classOne.txt","a")
     classOne.write("\n")
     classOne.write(name)
     classOne.write(":")
@@ -73,6 +74,18 @@ elif whichClass == "class three" or whichClass == "3" or whichClass == "Class Th
     classThree.write(":")
     classThree.write(str(score))
     classThree.close()
+
+if sort == ("Y"):
+    inputFile = open("classOne.txt", 'r')
+    lineList = inputFile.readlines()
+    lineList.sort()
+    print('The input in alphabetical order below :')
+    for line in  lineList:
+        print(line)
+        
+    inputFile = open("classOne.txt", 'w')
+    inputFile.write(line)
+    inputFile.close()
 
 
 if score <= 4: #if the score is less than 4 the indented code runs.
