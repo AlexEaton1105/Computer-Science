@@ -75,7 +75,7 @@ elif whichClass == "class three" or whichClass == "3" or whichClass == "Class Th
     classThree.write(str(score))
     classThree.close()
 
-if sort == ("Y"):
+if sort == "Y" or sort == "y" or sort == "yes" or sort == "Yes" or sort == "YES":
     inputFile = open("classOne.txt", 'r')
     lineList = inputFile.readlines()
     lineList.sort()
