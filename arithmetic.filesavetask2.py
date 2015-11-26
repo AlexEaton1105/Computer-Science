@@ -76,16 +76,12 @@ elif whichClass == "class three" or whichClass == "3" or whichClass == "Class Th
     classThree.close()
 
 if sort == "Y" or sort == "y" or sort == "yes" or sort == "Yes" or sort == "YES":
-    inputFile = open("classOne.txt", 'r')
+    inputFile = open("classOne.txt", 'a+')
     lineList = inputFile.readlines()
     lineList.sort()
     print('The input in alphabetical order below :')
     for line in  lineList:
         print(line)
-        
-    inputFile = open("classOne.txt", 'w')
-    inputFile.write(line)
-    inputFile.close()
 
 
 if score <= 4: #if the score is less than 4 the indented code runs.
