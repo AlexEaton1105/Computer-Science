@@ -17,3 +17,4 @@ while operator <10 :
 #the idea then is that you make the "result" var to equal numberOne, operator and numberTwo
 #you then compare the result var to an answer var you have gained from the user and go through the motions
 #at that point you want to screenshot it and start all over again using a list for the operator
+2
